@@ -16,7 +16,7 @@ export class ContactsService {
     return this.http.get(url);
   }
 
-  getEpmloyeeListPage(url){
+  getAPIData(url){
     return this.http.get(url);
   }
 

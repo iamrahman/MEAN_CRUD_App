@@ -30,7 +30,7 @@ export class AppComponent {
       }
     );
 
-    this.api.getEpmloyeeListPage('http://127.0.0.1:3000/api/contact/count').subscribe(
+    this.api.getAPIData('http://127.0.0.1:3000/api/contact/count').subscribe(
       count => {
         this.count = count;
       }
@@ -53,13 +53,14 @@ export class AppComponent {
     const Contact ={
       first_name: this.first_name,
       last_name: this.last_name,
-      phone: this.phone
+      phone: this.phone,
+      status: 'active'
     }
     var url = 'http://127.0.0.1:3000/api/contact/';
     this.api.saveEmployeeDetails(url, Contact).subscribe(contact => {
       this.contacts.push(Contact);
     });
-    this.api.getEpmloyeeListPage('http://127.0.0.1:3000/api/contact/count').subscribe(
+    this.api.getAPIData('http://127.0.0.1:3000/api/contact/count').subscribe(
       count => {
         this.count = count;
       }
@@ -71,7 +72,7 @@ export class AppComponent {
     this.page = this.page - 1;
     this.skip = this.perPage*this.page;
     console.log(this.skip);
-    this.api.getEpmloyeeListPage('http://127.0.0.1:3000/api/contacts/'+this.skip).subscribe(
+    this.api.getAPIData('http://127.0.0.1:3000/api/contacts/'+this.skip).subscribe(
       contacts => {
         this.contacts = contacts;
         this.page = this.page;
@@ -84,7 +85,7 @@ export class AppComponent {
     this.page = this.page + 1;
     this.skip = this.perPage*this.page;
     console.log(this.skip);
-    this.api.getEpmloyeeListPage('http://127.0.0.1:3000/api/contacts/'+this.skip).subscribe(
+    this.api.getAPIData('http://127.0.0.1:3000/api/contacts/'+this.skip).subscribe(
       contacts => {
         this.contacts = contacts;
         this.page = this.page;
@@ -94,10 +95,64 @@ export class AppComponent {
   }
 
   searchContact(){
-    this.api.getEpmloyeeListPage('http://127.0.0.1:3000/api/contact/search/'+this.search_key).subscribe(
+    this.api.getAPIData('http://127.0.0.1:3000/api/contact/search/'+this.search_key).subscribe(
       contacts => {
         this.contacts = contacts;
         console.log(contacts);
+      }
+    )
+  }
+
+  editEmployee(id){
+    this.api.getAPIData('http://127.0.0.1:3000/api/contacts/user/'+id).subscribe(
+      user =>{
+        user = user;
+        console.log(user);
+      }
+    );
+  }
+
+  blockEmployee(id){
+    this.api.getAPIData('http://127.0.0.1:3000/api/contact/user/block/'+id).subscribe();
+    this.api.getEpmloyeeList('http://127.0.0.1:3000/api/contacts').subscribe(
+      contacts => {
+        this.contacts = contacts;
+        console.log(contacts);
+      }
+    );
+
+    this.api.getAPIData('http://127.0.0.1:3000/api/contact/count').subscribe(
+      count => {
+        this.count = count;
+      }
+    )
+    this.api.getEpmloyeeList('http://127.0.0.1:3000/api/contacts').subscribe(
+      contacts => {
+        this.contacts = contacts;
+        console.log(contacts);
+      }
+    );
+
+    this.api.getAPIData('http://127.0.0.1:3000/api/contact/count').subscribe(
+      count => {
+        this.count = count;
+      }
+    )
+    //location.reload();
+    
+  }
+
+  changeOrder(column){
+    this.api.getEpmloyeeList('http://127.0.0.1:3000/api/contacts/order/'+column).subscribe(
+      contacts => {
+        this.contacts = contacts;
+        console.log(contacts);
+      }
+    );
+
+    this.api.getAPIData('http://127.0.0.1:3000/api/contact/count').subscribe(
+      count => {
+        this.count = count;
       }
     )
   }

@@ -1,0 +1,192 @@
+Looking for git in: git
+Using git 2.7.4 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/user/Documents/CRUD
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :AngularApp/src/app/app.module.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/API/package-lock.json
+> git ls-files --stage -- AngularApp/API/
+> git show :AngularApp/API/app.js
+> git ls-files --stage -- AngularApp/API/
+> git show :AngularApp/src/app/app.component.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/API/app.js
+> git ls-files --stage -- AngularApp/API/
+> git show :AngularApp/API/app.js
+> git ls-files --stage -- AngularApp/API/
+> git show :AngularApp/src/app/app-routing.module.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.css
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :AngularApp/src/app/app.component.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :AngularApp/src/app/app.component.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :AngularApp/API/Routes/route.js
+> git ls-files --stage -- AngularApp/API/Routes/
+> git show :AngularApp/src/app/contacts.service.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/API/Routes/route.js
+> git ls-files --stage -- AngularApp/API/Routes/
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/API/Routes/route.js
+> git ls-files --stage -- AngularApp/API/Routes/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :AngularApp/src/app/app.component.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/src/app/app.component.ts
+> git ls-files --stage -- AngularApp/src/app/
+> git show :AngularApp/API/Routes/route.js
+> git ls-files --stage -- AngularApp/API/Routes/
+> git show :AngularApp/src/app/app.component.html
+> git ls-files --stage -- AngularApp/src/app/

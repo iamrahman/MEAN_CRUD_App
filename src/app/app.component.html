@@ -6,10 +6,13 @@
       <form>
         <label for="first_name">First Name</label>
         <input type="text" [(ngModel)]="first_name" name="first_name" class="form-control" placeholder="Enter The First Name" required><br>
+
         <label for="last_name">Last Name</label>
         <input type="text" [(ngModel)]="last_name" name="last_name" class="form-control" placeholder="Enter the Last Name" required><br>
+        
         <label for="phone">Phone</label>
         <input type="text" [(ngModel)]="phone" name="phone" class="form-control" placeholder="Enter Phone Number" required><br>
+        
         <button type="button" class="btn btn-success" (click)="saveContact()">Submit</button>
       </form>
     </fieldset>
@@ -31,9 +34,9 @@
       <table class="table border">
         <thead>
           <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Phone</th>
+            <th><a (click)="changeOrder('first_name')">First Name</a></th>
+            <th><a (click)="changeOrder('last_name')">Last Name</a></th>
+            <th><a (click)="changeOrder('phone')">Phone</a></th>
             <th>Action</th>
           </tr>
         </thead>
@@ -46,6 +49,8 @@
               <div class="btn-group">
                   <button class="btn" style="background-color:whitesmoke;" (click)="editEmployee(obj._id)"> <i class="fas fa-edit" style="color:darkblue"></i> </button>
                   <button class="btn" style="background-color:whitesmoke;" (click)="deleteEmployee(obj._id)"> <i class="fas fa-trash-alt" style="color:red"></i> </button>
+                  <button class="btn" *ngIf="obj.status == 'active'" style="background-color:whitesmoke;" (click)="blockEmployee(obj._id)"> Block </button>
+                  <button class="btn" *ngIf="obj.status == 'inactive'" style="background-color:whitesmoke;" (click)="blockEmployee(obj._id)"> Ublock </button>
               </div>
             </td>
           </tr>
